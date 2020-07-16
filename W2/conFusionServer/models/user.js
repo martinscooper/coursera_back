@@ -9,13 +9,16 @@ var User = new Schema({
     },
     lastname: {
       type: String,
-        default: ''
+      default: ''
     },
+    facebookId: String,
     admin:   {
         type: Boolean,
         default: false
     }
 });
+
+
 
 User.plugin(passportLocalMongoose);
 module.exports = mongoose.model('User', User);

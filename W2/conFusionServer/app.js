@@ -53,6 +53,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/dishes', require('./routes/dishRouter'));
 app.use('/promotions', require('./routes/promoRouter'));
 app.use('/leaders', require('./routes/leaderRouter'));
+app.use('/favorites', require('./routes/favoritesRouter'));
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
